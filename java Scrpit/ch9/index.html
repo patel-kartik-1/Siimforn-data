@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Script</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <p>k</p>
+   <p>b</p>
+   <p>a</p>
+   <button>cl</button>
+
+    <script>
+        // $('p').click(function () {
+        //     console.log(this);
+        // })
+        // $('p').toggle(function () {
+        //     console.log(this);
+        // })
+        // setInterval(function(){
+        //     console.log("d");
+        //     $('p').toggle(1000,function(){
+                
+        //         console.log(this);
+        //     });
+        // },5000)
+
+        $('button').click(function () {
+            console.log(this);
+            $('p').toggle(1000,function(){
+                
+                console.log(this);
+            });
+        })
+
+
+    </script>
+</body>
+
+</html>

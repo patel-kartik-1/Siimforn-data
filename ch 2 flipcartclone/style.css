@@ -1,0 +1,353 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+    background-color: antiquewhite;
+    --blue: #2874f0;
+    --white: #ffffff;
+}
+
+.main {
+    background: #f1f3f4;
+
+}
+
+.mainNavbar {
+    background-color: var(--blue) !important;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: row; */
+    width: 100%;
+    min-height: 60px;
+
+}
+
+.navmain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.logomain img {
+    width: 109px;
+
+}
+
+
+.btn {
+    background-color: white;
+    color: var(--blue);
+    height: 50px;
+    font-size: 1.4rem;
+    padding: 0px 10px 0px 10px;
+}
+
+.btnSecond {
+    background-color: var(--blue);
+    color: var(--white);
+    /* color : var(--blue); */
+    height: 50px;
+    font-size: 1.4rem;
+    padding: 0px 10px 0px 10px;
+}
+
+.searcinput {
+    height: 35px;
+    /* width: 198px; */
+    width: 100%;
+    border: 0px;
+
+    background-color: white;
+
+    font-size: 1rem;
+
+}
+
+.serarchclass {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.searchbtn {
+    width: 60%;
+}
+
+.leftmanu {
+    width: 33%;
+    color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+
+    align-items: center;
+}
+
+.categary {
+    min-height: 100px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.categaryItems {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.categaryItems p {
+    font-size: 0.8rem;
+
+}
+
+.categaryItems img {
+    width: 65px;
+}
+
+.dealoftheday {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.dealoftheday .left {
+    width: 70%;
+    height: 100%;
+}
+
+.dealoftheday .right {
+    width: 30%;
+    background-color: rgb(186, 130, 56);
+    height: 100%;
+}
+
+
+#countdown,
+.sizeset {
+    /* width: 100%; */
+    font-size: 1rem !important;
+    margin: 0px;
+
+
+
+
+}
+
+section {
+    /* margin: 10px 0px 10px 0px ; */
+    padding: 0px 10px 0px 10px;
+
+}
+
+.dealupper {
+    width: 30%;
+    justify-content: space-between;
+    flex-direction: row;
+    /* padding-top: 17px; */
+
+}
+
+.deallowwer {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.boxs {
+    display: flex;
+    /* height: inherit; */
+    /* height: inherit; */
+    height: 163px;
+
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    OVERFLOW: auto;
+
+}
+
+.box {
+    height: inherit;
+    min-width: 200px;
+    /* border: 2px solid red; */
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box img {
+    width: 100px;
+    height: 100px;
+}
+
+.flexcustom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    PADDING-TOP: 10PX;
+    width: 100%;
+
+
+}
+
+.musicbooks {
+    max-width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--white);
+}
+
+.newflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.smallbtn {
+    height: 20px;
+    width: 20px;
+    color: var(--white);
+}
+
+.categaryItems img:hover,
+.box img:hover {
+    transform: scale(1.1);
+}
+
+.loginbtn {
+    width: 100px;
+    border-radius: 0px;
+    height: 35px;
+    border: 0px;
+
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+}
+
+.greentext {
+    color: green;
+}
+
+
+
+button {
+    border: none;
+}
+
+.footermain{
+    display: flex;
+    flex-direction: row;
+    background-color: #172337;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.fottersections{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    max-width: 20%;
+    padding: 10px;
+    font-size: 0.78rem;
+
+}
+.vl {
+    border-left: 2px solid var(--white);
+    height: 100%;
+    width: 30%;
+    opacity: 0.5;
+
+  }
+  .sectionline{
+    flex-direction: row;
+    min-width: 25%;
+  }
+@media only screen and (max-width: 800px) {
+    .fottersections { 
+        max-width: 32% ;    overflow: hidden;
+
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        padding: 10px;
+    }
+
+    .leftmanu {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .rightmanu {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .dealoftheday {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .dealoftheday .left,
+    .dealoftheday .right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .right img {
+        width: 50%;
+    }
+
+    .dealoftheday .right {
+        Display: flex;
+        justify-content: center;
+    }
+    .serarchclass{
+        padding: 9px 20px;
+        width: auto;
+
+    }
+}

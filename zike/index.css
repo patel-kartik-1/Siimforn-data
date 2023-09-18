@@ -1,0 +1,214 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.925rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-weight-body: 400;
+    --font-weight-body-bold: 700;
+    --font-size-body:16px;
+    --font-big-size-body: 20px;
+    --font-title-color:#98c397;
+    --font-title-black:#111;
+    --font-title-white:#fff;
+    --font-subtitle-colore:#e5e5e5;
+    --transition-web:all 0.3s linear;
+    --font-nav-color:#929aad;
+    --font-nav-link-color:#66f;
+}
+section{
+    position: relative;
+}
+
+.header-sec{
+    padding: 15px 0;
+    background-color: var(--font-title-white);
+}
+
+.header-sec::before{
+    position: absolute;
+    content: '';
+    display: inline !important;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transition: var(--transition-web);
+}
+
+.container {
+  width: 1170px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar,
+.navbar > .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .navbar,
+.navbar > .container {
+    display: block;
+  }
+}
+
+.navbar {
+  background-color: var(--font-title-white);
+  /* padding: 1rem 1.15rem; */
+}
+@media (min-width: 576px) {
+  .navbar .container {
+    max-width: 576px;
+  }
+}
+@media (max-width: 576px) {
+  .header-sec .container {
+    max-width: 100vw;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .container {
+    max-width: 1140px;
+  }
+}
+.navbar .navbar-header {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+.navbar .navbar-header .navbar-toggler {
+  cursor: pointer;
+  border: none;
+  display: none;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-header .navbar-toggler {
+    display: block;
+  }
+}
+.navbar .navbar-header .navbar-toggler span {
+  height: 2px;
+  width: 22px;
+  background-color: var(--font-nav-color);
+  display: block;
+}
+.navbar .navbar-header .navbar-toggler span:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+.navbar .navbar-header > a {
+  font-weight: 500;
+  color: var(--font-nav-color);
+}
+.navbar .navbar-menu {
+  display: flex;
+  align-items: center;
+  flex-basis: auto;
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu {
+    display: none;
+    text-align: center;
+  }
+}
+.navbar .navbar-menu.active {
+  display: flex !important;
+}
+.navbar .navbar-menu .navbar-nav {
+  margin-left: auto;
+  flex-direction: row;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu .navbar-nav {
+    width: 100%;
+    display: block;
+    border-top: 1px solid var(--font-subtitle-colore);
+    margin-top: 1rem;
+  }
+}
+.navbar .navbar-menu .navbar-nav > li > a {
+  color: var(--font-nav-color);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+.navbar .navbar-menu .navbar-nav > li > a:hover {
+  color: var(--font-title-color);
+}
+@media (max-width: 768px) {
+  .navbar .navbar-menu .navbar-nav > li > a {
+    border-bottom: 1px solid var(--font-subtitle-colore);
+  }
+}
+.navbar .navbar-menu .navbar-nav > li.active a {
+  color: var(--font-title-color);
+}
+
+.navbar .navbar-header > a span {
+  color: var(--font-title-color);
+}
+
+.navbar .navbar-header h4 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-header h4 {
+    font-size: 1.05rem;
+  }
+}
+
+#header{
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+
+#logo{
+  width: 100px;
+}
+
